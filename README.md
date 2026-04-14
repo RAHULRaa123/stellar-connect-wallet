@@ -37,5 +37,34 @@ A simple Stellar dApp using Freighter wallet.
 ## 💸 Transaction Screenshot
 ![Transaction](./transaction.png)
 
+## 🔗 Smart Contract Details
+
+- Contract Address:  
+CB74ZNSK42ZY2RCTVEBRHNYIKEOAHKN6OBJ4AT3PWORNBRREOGJAW2B7  
+
+## ⚙️ Contract Function Used
+- hello (returns greeting message)
+
+## 🔁 Transaction Hash
+
+543069d30a5de937c7fdf07027eb04d386196d47be741c3963b63a5f620cb9d5
+
+🔗 Explorer Link:
+https://stellar.expert/explorer/testnet/tx/543069d30a5de937c7fdf07027eb04d386196d47be741c3963b63a5f620cb9d5
+
+## 📡 Network
+- Stellar Testnet
+
+---
+
+## 🔄 Contract Integration
+
+This app interacts with a deployed Stellar smart contract.
+- Calls contract function from frontend
+- Displays response in UI
+- Handles transaction status (pending, success, error)
+
+---
+
 ## Status
-Completed for Stellar White Belt Level 1
+Completed for Stellar Yellow Belt Level 2
