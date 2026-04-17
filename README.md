@@ -1,88 +1,87 @@
-# Stellar Connect Wallet
+# 🚀 Stellar Connect Wallet Mini dApp
 
-## 🚀 Description
-This is a Stellar dApp built on **Stellar Testnet** using Freighter wallet.  
-It allows users to connect their wallet, view XLM balance, send transactions, and interact with a deployed smart contract.
-
----
-
-## 🟢 Level 1 Features
-- Connect Freighter wallet
-- Disconnect wallet
-- Display XLM balance
-- Send XLM to another address
-- Show transaction success or failure
+## 🔗 Live Demo  
+https://stellar-connect-wallet-l4vw.vercel.app  
 
 ---
 
-## 🟡 Level 2 Features
-- Smart contract deployed on Stellar Testnet
-- Call contract functions from frontend
-- Send feedback to blockchain
-- Fetch feedback from blockchain
-- Transaction status tracking (pending / success / error)
+## 📌 Description  
+This is a complete **end-to-end Stellar Mini dApp** built on **Stellar Testnet** using Freighter Wallet.  
+Users can connect their wallet, send transactions, and interact with a deployed smart contract to create and fetch feedback on-chain.
 
 ---
 
-## ⚠️ Error Handling
-- Wallet not connected
-- Transaction rejected
-- Insufficient balance
+## 🟢 Features  
+
+### Level 1
+- Connect Freighter Wallet  
+- Disconnect Wallet  
+- Display XLM Balance  
+- Send XLM  
+- Transaction Status  
+
+### Level 2
+- Smart Contract Integration  
+- Send Feedback to Blockchain  
+- Fetch Feedback from Blockchain  
+- Transaction Tracking  
+
+### Level 3 (New Added)
+- Loading states (UI feedback)  
+- Error handling  
+- Fully deployed app (Vercel)  
+- Clean UI  
 
 ---
 
-## 🔗 Smart Contract Details
+## 🧠 Smart Contract  
 
-- **Contract Address:**  
+**Contract Address:**  
 CBGOBZLELYYHDOWYV7ZHHF4BP2DTPGYFRGAQDGJQZKCBNIXLLXD7UAQB  
 
-### ⚙️ Contract Functions
-- `send_feedback`
-- `get_feedback`
+### Functions
+- `send_feedback`  
+- `get_feedback`  
 
 ---
 
-## 🔁 Transaction Proof
+## 🔁 Transaction Proof  
 
-- **Transaction Hash:**  
+**Transaction Hash:**  
 22491da5eaaee153369c07dde0d78a416adaf795493cf434321a45bc7a81baef  
 
-🔗 Explorer Link:  
+🔗 Explorer:  
 https://stellar.expert/explorer/testnet/tx/22491da5eaaee153369c07dde0d78a416adaf795493cf434321a45bc7a81baef  
 
 ---
 
-## 🧩 Tech Stack
-- React.js
-- Stellar SDK
-- Freighter Wallet
+## 🧪 Tests  
+
+✔ Minimum 3 tests implemented  
+
+👉 Add screenshot here:  
+![Tests](./test.png)
 
 ---
 
-## ⚙️ Setup Instructions
-1. Clone the repository  
-2. Run `npm install`  
-3. Run `npm start`  
-4. Open http://localhost:3000  
+## 🎥 Demo Video  
+
+👉 Add your 1-minute demo video link here:  
+(Upload on YouTube / Drive and paste link)
 
 ---
 
-## 📸 Screenshots
-
-### UI Screenshot
-![UI](./ui.png)
-
-### Transaction Screenshot
-![Transaction](./transaction.png)
+## 🧩 Tech Stack  
+- React.js  
+- Stellar SDK  
+- Freighter Wallet  
 
 ---
 
-## 🌐 Network
-- Stellar Testnet
+## ⚙️ Setup  
 
----
-
-## ✅ Status
-✔ Completed:
-- White Belt (Level 1)  
-- Yellow Belt (Level 2)
+```bash
+git clone https://github.com/RAHULRaa123/stellar-connect-wallet.git
+cd stellar-connect-wallet
+npm install
+npm start
