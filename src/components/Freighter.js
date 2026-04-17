@@ -26,11 +26,16 @@ const getBalance = async () => {
   return nativeBalance ? nativeBalance.balance : '0';
 };
 
-const userSignTransaction = async (xdr, network, signWith) => {
+const userSignTransaction = async (xdr, signWith) => {
   return await signTransaction(xdr, {
-    network,
+    networkPassphrase: StellarSdk.Networks.TESTNET, // ✅ FIX HERE
     accountToSign: signWith,
   });
 };
 
-export { checkConnection, retrievePublicKey, getBalance, userSignTransaction };
+export {
+  checkConnection,
+  retrievePublicKey,
+  getBalance,
+  userSignTransaction,
+};
