@@ -99,10 +99,24 @@ https://stellar.expert/explorer/testnet/tx/f498be49a48fd79f2fe7f4ff6a53ec09df5f9
 
 ---
 
+## ⚙️ CI/CD Pipeline  
+
+This project includes a **GitHub Actions CI/CD pipeline** that automatically runs on every push to the main branch.
+
+### ✅ Features:
+- Automatic workflow execution  
+- Continuous Integration setup  
+- Ensures project consistency  
+
+![CI/CD](./ci-cd.png)
+
+---
+
 ## ✅ Result  
 
-Successfully executed inter-contract call and stored data on-chain:
+Successfully executed inter-contract call, minted tokens, and stored data on-chain:
 
 ```bash
 2
 "FINAL SUCCESS"
+```
