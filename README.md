@@ -89,13 +89,16 @@ https://stellar.expert/explorer/testnet/tx/f498be49a48fd79f2fe7f4ff6a53ec09df5f9
 
 ---
 
-## 📸 Level 4 Proof  
+## 📸 Screenshots  
 
 ### ✅ Inter-contract call success  
 ![Inter Contract](./inter-contract-success.png)
 
 ### ✅ Fetch feedback from blockchain  
 ![Fetch Feedback](./fetch-feedback.png)
+
+### 📱 Mobile Responsive  
+![Mobile View](./mobile-view.png)
 
 ---
 
@@ -119,4 +122,3 @@ Successfully executed inter-contract call, minted tokens, and stored data on-cha
 ```bash
 2
 "FINAL SUCCESS"
-```
