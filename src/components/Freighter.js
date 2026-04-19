@@ -1,21 +1,14 @@
-import { isConnected, requestAccess } from '@stellar/freighter-api';
+import { StellarWalletsKit } from '@creit.tech/stellar-wallets-kit';
+
+const kit = new StellarWalletsKit({
+  network: 'TESTNET'
+});
 
 export const connectWallet = async () => {
   try {
-    // Desktop (Freighter extension)
-    if (window.freighter) {
-      const access = await requestAccess();
-      return access.address;
-    } 
-    
-    // 📱 Mobile fallback
-    else {
-      alert("Open this app inside Freighter mobile browser");
-      
-      // redirect user to open in wallet
-      window.location.href = "https://freighter.app/";
-    }
+    const { address } = await kit.openModal();
+    return address;
   } catch (err) {
-    console.error(err);
+    console.log(err);
   }
 };
