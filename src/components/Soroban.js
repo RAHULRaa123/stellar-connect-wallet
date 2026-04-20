@@ -79,7 +79,7 @@ async function contractInt(caller, fnName, values) {
 
 async function sendFeedback(caller, feedbackText) {
   try {
-    const value = nativeToScVal(feedbackText);
+   const value = nativeToScVal(feedbackText, { type: "string" });
     const result = await contractInt(caller, "send_feedback", value);
     return Number(result);
   } catch (error) {
