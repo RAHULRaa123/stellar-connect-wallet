@@ -37,13 +37,23 @@ Advanced features like token rewards and inter-contract calls are implemented as
 
 ---
 
+## 🚀 Production Readiness
+
+* CI/CD pipeline implemented using GitHub Actions
+* Error handling for failed transactions
+* Mobile responsive UI
+* Optimized contract interactions
+* Clean and scalable project structure
+
+---
+
 ## 🔄 How It Works
 
 1. User connects Freighter wallet
 2. User submits anonymous feedback
 3. Feedback is stored on Stellar blockchain
 4. Feedback is fetched and displayed in the UI
-5. (Optional) User receives token reward via smart contract
+5. User receives token reward via smart contract
 
 ---
 
@@ -190,6 +200,8 @@ npm start
 ---
 
 ## ⚙️ CI/CD Pipeline
+
+![CI](https://github.com/RAHULRaa123/stellar-connect-wallet/actions/workflows/main.yml/badge.svg)
 
 This project includes a **GitHub Actions CI/CD pipeline** that automatically runs on every push to the main branch.
 
