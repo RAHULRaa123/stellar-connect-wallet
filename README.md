@@ -37,6 +37,18 @@ Advanced features like token rewards and inter-contract calls are implemented as
 
 ---
 
+## 🔌 Smart Contract Integration (Frontend Calls)
+
+The frontend actively calls all deployed smart contract functions:
+
+- send_feedback → Stores feedback on-chain  
+- fetch_feedback → Retrieves feedback from blockchain  
+- send_feedback_and_reward → Performs inter-contract call and triggers token reward  
+
+All smart contract functions are fully integrated and triggered via the UI.
+
+---
+
 ## 🚀 Production Readiness
 
 * CI/CD pipeline implemented using GitHub Actions
@@ -91,6 +103,7 @@ Frontend (React) → Stellar SDK → Smart Contracts (Soroban) → Stellar Testn
 * Error handling
 * Fully deployed app
 * Clean UI
+* All smart contract functions called from frontend
 
 ### Level 4 (Advanced Features)
 
@@ -185,6 +198,8 @@ https://github.com/RAHULRaa123/stellar-connect-wallet/commits/main
 * Feedback submission works
 * Empty feedback rejected
 * Feedback count verified
+* Smart contract call verification test passed
+* App rendering test passed
 
 ![Tests](./test-output.png)
 
