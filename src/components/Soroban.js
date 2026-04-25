@@ -15,7 +15,7 @@ import { userSignTransaction } from "./Freighter";
 const RPC_URL = "https://soroban-testnet.stellar.org:443";
 const NETWORK = Networks.TESTNET;
 
-//  Tumhara contract address
+// Tumhara caller contract address
 const CONTRACT_ADDRESS = "CBGOBZLELYYHDOWYV7ZHHF4BP2DTPGYFRGAQDGJQZKCBNIXLLXD7UAQB";
 
 const server = new StellarRpc.Server(RPC_URL);
@@ -77,9 +77,10 @@ async function contractInt(caller, fnName, values) {
 
 /* ================= Contract Functions ================= */
 
+// OLD functions (keep them)
 async function sendFeedback(caller, feedbackText) {
   try {
-   const value = nativeToScVal(feedbackText, { type: "string" });
+    const value = nativeToScVal(feedbackText, { type: "string" });
     const result = await contractInt(caller, "send_feedback", value);
     return Number(result);
   } catch (error) {
@@ -99,6 +100,30 @@ async function fetchFeedback(caller, feedbackId) {
   }
 }
 
+/* ================= NEW FUNCTION (IMPORTANT FIX) ================= */
+
+async function sendFeedbackAndReward(caller, feedbackText) {
+  try {
+    const values = [
+      nativeToScVal(CONTRACT_ADDRESS, { type: "address" }),
+      nativeToScVal(CONTRACT_ADDRESS, { type: "address" }),
+      nativeToScVal(caller, { type: "address" }),
+      nativeToScVal(feedbackText, { type: "string" }),
+    ];
+
+    const result = await contractInt(
+      caller,
+      "send_feedback_and_reward",
+      values
+    );
+
+    return Number(result);
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+}
+
 /* ================= Exports ================= */
 
-export { sendFeedback, fetchFeedback };
+export { sendFeedback, fetchFeedback, sendFeedbackAndReward };
