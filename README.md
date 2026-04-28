@@ -1,8 +1,8 @@
-# 🚀 Stellar Connect Wallet
+# 🚀 Stellar Feedback & Reward dApp
 
 ## 🔗 Live Demo
 
-[Live App](https://stellar-connect-wallet-l4vw.vercel.app)
+[Live App](https://stellar-feedback-dapp-l4vw.vercel.app)
 
 ---
 
@@ -171,7 +171,7 @@ Google Form responses (Excel):
 * Better feedback submission handling
 
 Commit history:
-[View Commit History](https://github.com/RAHULRaa123/stellar-connect-wallet/commits/main)
+[View Commit History](https://github.com/RAHULRaa123/stellar-feedback-dapp/commits/main)
 
 ---
 
@@ -209,8 +209,8 @@ All tests are successfully passing.
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/RAHULRaa123/stellar-connect-wallet.git
-cd stellar-connect-wallet
+git clone https://github.com/RAHULRaa123/stellar-feedback-dapp.git
+cd stellar-feedback-dapp
 npm install
 npm start
 ```
@@ -219,7 +219,7 @@ npm start
 
 ## ⚙️ CI/CD
 
-![CI](https://github.com/RAHULRaa123/stellar-connect-wallet/actions/workflows/main.yml/badge.svg)
+![CI](https://github.com/RAHULRaa123/stellar-feedback-dapp/actions/workflows/main.yml/badge.svg)
 
 ---
 
