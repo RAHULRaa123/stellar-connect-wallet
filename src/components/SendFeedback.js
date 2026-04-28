@@ -1,14 +1,15 @@
 import React, { useState, useContext } from "react";
 import { pubKeyData } from "../App";
-import { sendFeedback, sendFeedbackAndReward } from "./Soroban";
+import { sendFeedback } from "./Soroban";
 
 function SendFeedback() {
   const [fbData, setFbData] = useState("");
   const [fbId, setFbId] = useState(null);
-  const [loading, setLoading] = useState(false);
   const pubKey = useContext(pubKeyData);
 
   const handleCreateFeedback = async () => {
+    console.log("pubKey:", pubKey);
+
     if (!pubKey) {
       alert("Pehle wallet connect karo");
       return;
@@ -20,20 +21,12 @@ function SendFeedback() {
     }
 
     try {
-      setLoading(true);
-
-      // ✅ BOTH functions call ho rahe hain (IMPORTANT FIX)
       const result = await sendFeedback(pubKey, fbData);
-      await sendFeedbackAndReward(pubKey, fbData);
-
       setFbId(result);
-      setFbData("");
-
+      setFbData(""); // input clear
     } catch (error) {
       console.error("Error:", error);
       alert("Transaction failed");
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -51,10 +44,9 @@ function SendFeedback() {
 
       <button
         onClick={handleCreateFeedback}
-        disabled={loading}
         className="bg-orange-700 text-white p-2 rounded"
       >
-        {loading ? "Processing..." : "Create"}
+        Create
       </button>
 
       <div className="mt-4 text-center">
