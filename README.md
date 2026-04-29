@@ -58,15 +58,16 @@ All smart contract functions are fully integrated and triggered via the UI.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture Document
 
-Frontend (React) → Stellar SDK → Smart Contracts (Soroban) → Stellar Testnet
+- Frontend: React  
+- Blockchain: Stellar Testnet  
+- Smart Contracts: Soroban  
+- Wallet: Freighter  
+- Deployment: Vercel  
 
-* React UI handles user interaction
-* Freighter wallet signs transactions
-* Smart contracts store and fetch feedback
-* Token contract rewards users
-
+Flow:  
+User → React UI → Freighter → Smart Contract → Blockchain → UI
 ---
 
 ## 🔄 How It Works
@@ -166,13 +167,16 @@ Google Form responses (Excel):
 
 ## 🚀 Improvements Implemented
 
-* Improved loading states
-* Enhanced UI responsiveness
-* Better feedback submission handling
+### 🔄 Feedback-Based Improvements
 
-Commit history:
-[View Commit History](https://github.com/RAHULRaa123/stellar-feedback-dapp/commits/main)
+Based on user feedback, the following changes were implemented:
 
+- Improved loading states  
+- Enhanced mobile responsiveness  
+- Better feedback submission UX  
+
+Commit Proof:  
+https://github.com/RAHULRaa123/stellar-feedback-dapp/commits/main
 ---
 
 ## 📸 Screenshots
@@ -242,7 +246,13 @@ This project uses GitHub Actions for automated CI/CD.
 GitHub Actions:
 https://github.com/RAHULRaa123/stellar-feedback-dapp/actions
 ---
+## 🚀 Future Scope
 
+- Real-time feedback updates  
+- Advanced analytics dashboard  
+- Token reward improvements  
+- Better UI/UX
+  
 ## 👨‍💻 Author
 
 Rahul Saini
