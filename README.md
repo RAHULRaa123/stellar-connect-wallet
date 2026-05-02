@@ -44,13 +44,14 @@ Anonymous Feedback dApp with **user validation + reward system using smart contr
 
 ## 🏗️ Architecture Document
 
-### 📊 Architecture Diagram
+- Frontend: React  
+- Blockchain: Stellar Testnet  
+- Smart Contracts: Soroban  
+- Wallet: Freighter  
+- Deployment: Vercel  
 
-![Architecture](./architecture.png)
-
-### Flow:
-
-User → React UI → Freighter Wallet → Smart Contract → Stellar Blockchain → UI
+Flow:  
+User → React UI → Freighter → Smart Contract → Blockchain → UI
 
 ---
 
